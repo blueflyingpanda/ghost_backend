@@ -1,3 +1,5 @@
+import json
+
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from rest_framework import permissions, viewsets
@@ -16,4 +18,6 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 def ping(request):
-    return HttpResponse('Pong')
+    with open('assistant_bot/data/data.json') as fr:
+        data = json.load(fr)
+    return HttpResponse(data)
