@@ -20,4 +20,5 @@ class UserViewSet(viewsets.ModelViewSet):
 def ping(request):
     with open('assistant_bot/data/data.json') as fr:
         data = json.load(fr)
+        data.pop('teacher')
     return HttpResponse(json.dumps(data))
