@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-1@me%^phu5q3wlb0xcgt!@i2s@*n+*3qyte159h9mm+sx9^%gh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lhelper.pythonanywhere.com']
+ALLOWED_HOSTS = ['lhelper.pythonanywhere.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     "rest_framework",
