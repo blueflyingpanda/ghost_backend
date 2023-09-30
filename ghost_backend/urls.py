@@ -19,6 +19,7 @@ from django.urls import include, path
 from rest_framework import routers
 
 from core import views
+from core.views import StudentListAPIView
 
 router = routers.DefaultRouter()
 router.register(r"users", views.UserViewSet)
@@ -26,5 +27,7 @@ router.register(r"users", views.UserViewSet)
 urlpatterns = [
     path("api", include(router.urls)),
     path("admin/", admin.site.urls),
-    path("ping/", views.ping)
+    path("ping/", views.ping),
+    path("pong/", StudentListAPIView.as_view()),
+    path("upd/", views.upd)
 ]
