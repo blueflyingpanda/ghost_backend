@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from rest_framework import permissions, viewsets
 
-from ghost_backend.core.serializers import UserSerializer
+from core.serializers import UserSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):

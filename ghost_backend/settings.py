@@ -29,13 +29,6 @@ CORS_ORIGIN_ALLOW_ALL = DEBUG
 ALLOWED_HOSTS = ['lhelper.pythonanywhere.com', '127.0.0.1']
 
 INSTALLED_APPS = [
-    "rest_framework",
-]
-
-
-# Application definition
-
-INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -43,7 +36,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "corsheaders"
+    "corsheaders",
+    'core'
 ]
 
 MIDDLEWARE = [
